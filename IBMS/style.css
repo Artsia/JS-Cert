@@ -13,8 +13,8 @@ body {
 .box {
     background-color: white;
     width: 40%;
-    height: auto;
     display: flex;
+    height: 50%;
     flex-direction: column;
     justify-content: space-evenly;
 }
@@ -55,7 +55,7 @@ body {
     max-height: 100px;
     height: 100%;
     border: 2px solid #0e6da4;
-    border-radius: 5%;
+    border-radius: 2%;
 }
 
 #taskInput:visited{
@@ -77,3 +77,28 @@ body {
 }
 
 /*tasks to be added styles*/
+
+.container{
+    margin-top: 5%;
+    width: 90%;
+}
+
+.task{
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid lightblue;
+    margin: 50px 5%;
+}
+
+.task-paragraph{
+    font-family: 'Courier New', Courier, monospace;
+    color: #046095;
+}
+
+.del-btn{
+ background-color: white;
+}
+
+.task-image{
+    width: 18px;
+}
