@@ -1,0 +1,32 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    height: 90vh;
+    width: 100%;
+    background-color: lightcoral;
+}
+
+.card{
+
+  
+width: 100%;
+
+
+}
+
+#domainNameDiv{
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+
+
+#ipAdrressDiv{
+    display: flex;
+    justify-content: center;
+}
