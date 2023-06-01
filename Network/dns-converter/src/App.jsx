@@ -1,6 +1,4 @@
-//import { useState } from 'react'
 import './App.css'
-import createIPv4Adress from './ip'
 
 function App() {
 
