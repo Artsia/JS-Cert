@@ -1,7 +1,10 @@
 /**Compare two arrays and return a 
  * new array with any items only found 
  * in one of the two given arrays, but not both. 
- * return the symmetric difference of the two arrays. */
+ * return the symmetric difference of the two arrays.
+ * problem does not ask to deal with duplications */
+
+
 
 
 function diffArray(arr1, arr2) {
@@ -71,7 +74,7 @@ function countArrZeroes(arr) {
 
 //test cases:
 
-let a = diffArray([], [1, 2, 3, 4, 5]);
+/*let a = diffArray([], [1, 2, 3, 4, 5]);
 console.log(a)
 
 let b = diffArray([1, 2, 3, 5], []);
@@ -80,9 +83,23 @@ console.log(b)
 let c = diffArray([], []);
 console.log(c)
 
-
 let d = diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
-console.log(d)
+console.log(d)*/
+
+
+//cases with duplications
+
+let e = diffArray([1, 2, 3, 4, 5, 1], [2, 3, 5]);
+//console.log(e)
+
+
+let s = diffArray(["diorite", "andesite", "grass", "dirt", "pink wool", "dead shrub"],
+    ["diorite", "andesite", "grass", "dirt", "dead shrub"])
+console.log(s)
+
+let w = diffArray([1, "calf", 3, "piglet"], [7, "filly"])
+console.log(w);
+
 
 
 /*function dif(arr1, arr2) {
