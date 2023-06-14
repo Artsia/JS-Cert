@@ -11,25 +11,24 @@ because it contains the name and its value, that was passed on as the second arg
 
 function whatIsInAName(collection, source) {
 
-    objsInCollection = collection.length;
     tempArray = []
+    sourceKey = Object.keys(source) //return an array of keys from the source collection
 
-    for (let i = 0; i < objsInCollection; i++) {
+    for (let i = 0; i < collection.length; i++) {
 
-        dic = objsInCollection[i];
-        sourceKey = Object.keys(source)
+        dic = collection[i]; //each collection contains an array of dictionary objects
 
         if (source.length == 1) {
-            if (keys in dic === sourceKey) {
-                tempArray.push(collection[i])
+            if (keys in dic === sourceKey[0]) {
+                tempArray.push(dic)
             }
 
         } else if (source.length > 1) {
-
+            //loop through source collection keys adn compare values with dictionary
             for (i in source) {
-                if (keys in dic === sourceKey) {
+                if (keys in dic === sourceKey[i]) {
                     if (dic[keys] == source[sourceKey]) {
-                        tempArray.push(collection[i])
+                        tempArray.push(dic)
                     }
 
                 }
@@ -37,18 +36,12 @@ function whatIsInAName(collection, source) {
             }
 
         }
-
-
-
-
-
-
         //console.log(objsInCollection.values());
-        /*if (collection[i].first === source.last || collection[i].last === source.last) {
+        /*if (collection[i].first === source.last 
+            || collection[i].last === source.last) {
             tempArray.push(collection[i])
         }*/
     }
-    // key for k in source, get
 
     return tempArray
 
