@@ -47,20 +47,18 @@ function whatIsInAName(collection, source) {
 
 }
 
-//https://www.collectionsjs.com/dict
 
-a = whatIsInAName([
-    { first: "Romeo", last: "Montague" },
-    { first: "Mercutio", last: null },
-    { first: "Tybalt", last: "Capulet" }],
-    { last: "Capulet" })
+function name(collection, source) {
+    return collection.filter(obj => {
+      return Object.keys(source).every(key => {
+        return obj[key] === source[key];
+      });
+    });
+  }
+  
 
-b = whatIsInAName([
-    { "apple": 1 },
-    { "apple": 1 },
-    { "apple": 1, "bat": 2 }],
-    { "apple": 1 })
-
-
+a = name([{ "apple": 1, "bat": 2 }, 
+{ "apple": 1 }, 
+{ "apple": 1, "bat": 2, "cookie": 2 },
+ { "bat": 2 }], { "apple": 1, "bat": 2 })
 console.log(a);
-
