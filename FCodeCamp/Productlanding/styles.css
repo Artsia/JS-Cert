@@ -1,0 +1,197 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Add CSS styles for header, nav, and form elements */
+#header {
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: bisque;
+    width: auto;
+    /*position: relative;*/
+}
+
+#header #headerImage {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    /*tl br*/
+
+}
+
+#header-img {
+    width: 50px;
+    height: 50px;
+}
+
+#header #headerNav {
+    width: 80%;
+}
+
+
+
+#nav-bar {
+
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    /*border:1px solid red;*/
+    height: 100%;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    /*position: sticky;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      width: 720px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;*/
+
+}
+
+
+
+.nav-link {
+    cursor: pointer;
+}
+
+.nav-link a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+#section1 {
+    display: flex;
+    justify-content: center;
+}
+
+#section1Div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+/*section2*/
+
+#section2 {
+    display: flex;
+    justify-content: center;
+}
+
+.product2 img {
+    width: 150px;
+
+}
+
+#section3 {
+    display: flex;
+    justify-content: center;
+}
+
+#section3Div {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#email {
+    padding: 0.5em;
+    margin: 0.5em;
+    border-radius: 3px;
+    border: 1px solid gray;
+}
+
+#submit {
+    margin: 0.5em;
+    padding: 0.5em;
+    background-color: blue;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Add media query to change styles for different screen sizes */
+@media (max-width: 600px) {
+    #nav-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Add media query to change styles for different screen sizes */
+@media (max-width: 900px) {
+    #section1Div {
+        grid-template-columns: 1fr;
+    }
+
+    #section2Div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .product2 {
+        width: 45%;
+        margin: 10px;
+    }
+
+    #section3Div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .product3 {
+        width: 45%;
+        margin: 10px;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .product img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    #nav-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product img {
+        width: 100%;
+        height: auto;
+    }
+}
